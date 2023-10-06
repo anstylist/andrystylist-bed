@@ -69,6 +69,14 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::user-address.user-address"
+    },
+    "firstName": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "lastName": {
+      "type": "string",
+      "maxLength": 100
     }
   }
 }

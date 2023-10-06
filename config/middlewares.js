@@ -1,3 +1,4 @@
+// @ts-nocheck
 module.exports = [
   'strapi::errors',
   {
@@ -7,7 +8,7 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'res.cloudinary.com'],
+          'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'res.cloudinary.com', 'cdn.jsdelivr.net', 'strapi.io'],
           'media-src': [
             "'self'",
             'data:',
@@ -15,6 +16,8 @@ module.exports = [
             'market-assets.strapi.io',
             'res.cloudinary.com',
           ],
+          'script-src': ["'self'", 'editor.unlayer.com'],
+          'frame-src': ["'self'", 'editor.unlayer.com'],
           upgradeInsecureRequests: null,
         },
       },
