@@ -912,6 +912,38 @@ export interface ApiCourseCourse extends Schema.CollectionType {
   };
 }
 
+export interface ApiNewsletterEmailsListNewsletterEmailsList
+  extends Schema.CollectionType {
+  collectionName: "newsletter_emails_lists";
+  info: {
+    singularName: "newsletter-emails-list";
+    pluralName: "newsletter-emails-lists";
+    displayName: "NewsletterEmailsList";
+    description: "";
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    email: Attribute.Email & Attribute.Unique;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      "api::newsletter-emails-list.newsletter-emails-list",
+      "oneToOne",
+      "admin::user"
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      "api::newsletter-emails-list.newsletter-emails-list",
+      "oneToOne",
+      "admin::user"
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Schema.CollectionType {
   collectionName: "products";
   info: {
@@ -1019,6 +1051,7 @@ declare module "@strapi/types" {
       "api::category.category": ApiCategoryCategory;
       "api::country.country": ApiCountryCountry;
       "api::course.course": ApiCourseCourse;
+      "api::newsletter-emails-list.newsletter-emails-list": ApiNewsletterEmailsListNewsletterEmailsList;
       "api::product.product": ApiProductProduct;
       "api::user-address.user-address": ApiUserAddressUserAddress;
     }
