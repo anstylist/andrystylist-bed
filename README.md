@@ -11,14 +11,14 @@ This is a page designed so you can register, log in, retrieve your password by s
 
 **Cloudinary:** Cloudinary is a cloud-based image and video management platform that allows developers to optimize, deliver and transform images and videos quickly and easily.
 
+**Api Documentation swagger**
+Swagger is a set of open source tools for designing, building, documenting and using RESTful web services.
+
 ## Database
 El backend utiliza PostgreSQL como base de datos para almacenar información del usuario, datos de servicios y productos.
 
 ## Deployment
 The backend is deployed on Render, a cloud hosting service, to make it accessible to the frontend and users.
-
-## Api Documentation swagger 
-Swagger is a set of open source tools for designing, building, documenting and using RESTful web services.
 
 ## Prerequisites 📋
 
