@@ -17,9 +17,19 @@ module.exports = {
           text: `${message}`,
           html: `${message}`,
         });
-      }
 
-      ctx.body = 'ok';
+        ctx.body = {
+          message: 'The contact message has been sent successfully',
+        }
+      } else {
+        ctx.badRequest('The name, email and message properties are required', {
+          messages: [
+            { name: !name && 'Your name is required.' },
+            { email: !name && 'Your email is required.' },
+            { message: !name && 'Your message is required.' }
+          ]
+        })
+      }
     } catch (err) {
       ctx.body = err;
       console.log(err)

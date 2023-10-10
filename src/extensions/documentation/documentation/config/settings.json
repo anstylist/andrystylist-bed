@@ -1,0 +1,17 @@
+{
+  "info": {
+    "version": "3.0.0",
+    "title": "Andrystylist's API Documentation",
+    "description": "",
+    "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
+    "contact": {
+      "name": "TEAM",
+      "email": "andrystylist.noreply@gmail.com",
+      "url": "andrystylist.vercel.app"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  }
+}

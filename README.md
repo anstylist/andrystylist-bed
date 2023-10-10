@@ -17,6 +17,8 @@ El backend utiliza PostgreSQL como base de datos para almacenar información del
 ## Deployment
 The backend is deployed on Render, a cloud hosting service, to make it accessible to the frontend and users.
 
+## Api Documentation swagger 
+Swagger is a set of open source tools for designing, building, documenting and using RESTful web services.
 
 ## Prerequisites 📋
 
@@ -93,6 +95,18 @@ npm run build
 # or
 yarn build
 ```
+
+## API Documentation 📷
+### Authentication endpoints
+
+![image](screenshot/endpoints.png)
+
+### login example
+![image ](<screenshot/Screen Shot 2023-10-09 at 11.26.04 PM.png>)
+![image](<screenshot/Screen Shot 2023-10-09 at 11.26.36 PM.png>)
+
+### example method get / brand
+![Alt text](<screenshot/Screen Shot 2023-10-09 at 11.29.38 PM.png>)
 
 ## ⚙️ Deployment
 
